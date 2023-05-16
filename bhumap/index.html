@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bHU MAP</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="lo3.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<script src="script.js"></script>
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  onmouseover="gfg_Run()">
+  <script> document.onkeydown = function (e) { if (e.ctrlKey && (e.keyCode === 85)) { return false; } }; </script>
+  
+
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+
+
+<div class="logo"><img src="lo3.png" alt="logo"></div>
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#page-top";>bhu map</a>
+      
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav nav-pills width=50px"><br>
+
+        <li style=font-size:20px;><a href="#about" class="page-scroll">For Buyers</a></li>
+        <li style=font-size:20px;><a href="#services" class="page-scroll">For Tenants</a></li>
+        <li style=font-size:20px;><a href="#portfolio" class="page-scroll">For Owners</a></li>
+        <li style=font-size:20px;><a href="#testimonials" class="page-scroll">insights</a></li>
+         <li style=font-size:20px;><a href="form.html" class="page-scroll">login</a></li>
+
+        <li style=font-size:20px;><a href="#contact" class="page-scroll" >Contact Us</a></li>      
+</ul>
+
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
+<!-- Header -->
+<header id="header">
+  	<div class="intro"><br>
+      <div class="bl">
+        <form>
+          <select id="color" class="blends">
+            <option value="normal">Normal</option>
+        <option value="darken">Darken</option>
+        <option value="multiply">Multiply</option>
+        <option value="screen">Screen</option>
+            <option value="color">Color</option>
+            <option value="color-burn">Color Burn</option>
+            <option value="color-dodge">Color Dodge</option>
+        <option value="overlay">Overlay</option>
+        <option value="soft-light">Soft Light</option>
+        <option value="hard-light">Dard Light</option>
+            <option value="difference">Difference</option>
+            <option value="exclusion">Exclusion</option>
+            <option value="hue">Hue</option>
+        <option value="saturation">Saturation</option>
+            <option value="lighten">Lighten</option>
+            <option value="luminosity">Luminosity</option>
+            
+            
+          </select>
+        </form>
+      </div>
+      <script>const form = document.querySelector('form');
+        const background = document.querySelector('.intro');
+        const updateBlendMode = () => {
+        const selection = document.querySelector('.blends').value;
+          background.style.backgroundBlendMode = selection;
+        };
+         
+        form.addEventListener('submit',(e) => {
+          e.preventDefault();
+        });
+         
+        form.addEventListener('change',() => {
+          updateBlendMode();
+        });
+         
+        updateBlendMode();</script>
+
+<marquee direction=right><img src="bir5.gif" alt="birds" width="110" height="110"></marquee>
+<div style=  "margin:auto; margin-top:3%; width:50%;" class="input-group" >
+<button type="button" class="btn btn-info btn-lg " style="color: tomato;">BUY</button>&nbsp;&nbsp;
+<button type="button" class="btn btn-info btn-lg" style="color: tomato;">SELL</button>&nbsp;&nbsp;
+<button type="button" class="btn btn-info btn-lg" style="color: tomato;">PG/RENT</button>
+  <div class="form-outline">
+    <input type="search" id="form1" class="form-control input-lg rounded-pill" placeholder="search your property"/>
+<span class="rounded-pill" style="width:130px"></span>
+    <label class="form-label" for="form1" placeholder="search your property"></label>
+    
+  </div>
+  <button    type="button" class="btn btn-primary" style="margin-left: 370px; color: tomato; background-color: rebeccapurple;">
+    <i class="fa fa-search"></i>
+  </button>
+  
+</div><br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 intro-text">
+            <h1><strong>Search And Explore,<br>
+              Whatever Need Is Your.</strong><br>
+             </h1><br>
+<br>
+            
+            <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a> </div>
+
+        </div>
+      </div>
+    <h2 style= "color:white;" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We Close and Open New Doors.</h2>
+
+  </div>
+</header>
+<!-- Get Touch Section -->
+<div id="get-touch" style="background-color: rgb(138, 136, 255); color: black;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-md-offset-1">
+        <h3>Cost & Expenses</h3>
+        <p>Get started today and complete our form to request your free estimate</p>
+      </div>
+      <div class="col-xs-12 col-md-4 text-center"><a href="#contact" class="btn btn-custom btn-lg page-scroll">Free Estimate</a></div>
+    </div>
+  </div>
+</div>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6" style="background-color: transparent; border: none; "> <img src="ll.gif" alt="">
+       
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <h2>Who We Are</h2>
+          <p>Bhu Map is property consisting of land and the buildings on it, along with its natural resources such as crops, minerals or water; immovable property of this nature; an interest vested in this (also) an item of real property, (more generally) buildings or housing in general.</p>
+          <h3>Why Choose Us?</h3>
+          <div class="list-style">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <ul>
+                <li>Years of Experience</li>
+                <li>Fully Insured</li>
+                <li>Cost Control Experts</li>
+                <li>100% Satisfaction Guarantee</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <ul>
+                <li>Free Consultation</li>
+                <li>Satisfied Customers</li>
+                <li>Project Management</li>
+                <li>Affordable Pricing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Services Section -->
+<div id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Services</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service-media"> <img src="img/services/service-1.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3>New Home Construction</h3>
+          <p>Home construction or residential construction is the process of constructing a house, apartment building, or similar residential building generally referred to as a 'home' when giving consideration to the people who might now or someday reside there. Beginning with simple pre-historic shelters</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-media"> <img src="img/services/service-2.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Home Additions</h3>
+          <p>The concept of ‘home’ has been researched and theorized across disciplines – topics ranging from the idea of home, the interior, the psyche, liminal space, contested space to gender and politics. The home as a concept expands beyond residence as contemporary lifestyles </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-media"> <img src="img/services/service-1.jpg" alt=" " height="120px"> </div>
+        <div class="service-desc">
+          <h3>Rent services</h3>
+          <p>Renting, also known as hiring or letting,is an agreement where a payment is made for the use of a good, service or property owned by another over a fixed period of time. To maintain such an agreement, a rental agreement (or lease) is signed to establish the roles and expectations of both the tenant and landlord.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service-media"> <img src="img/services/service-2.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Emi available</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-media"> <img src="th.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Rented</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-media"> <img src="th (3).jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Decks & Porches</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+        - #PROPERTY
+      -->
+
+      <section class="property" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle" style="font-size: 15px;">Properties</p>
+
+          <h2 class="h2 section-title" style="font-size: 15px;">Featured Listings</h2>
+
+          <ul class="property-list has-scrollbar">
+
+            <li>
+              <div class="property-card" style="font-size: 15px;">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-1.jpg" alt="New Apartment Nice View" class="w-100">
+                  </a>
+
+                  <div class="card-badge green" style="font-size: 15px;">For Rent</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address style="font-size: 15px;">Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span style="font-size: 15px;">4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span style="font-size: 15px;">2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong style="font-size: 15px;">$34,900</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#" style="font-size: 15px;">New Apartment Nice View</a>
+                  </h3>
+
+                  <p class="card-text" style="font-size: 15px;">
+                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#" style="font-size: 15px;">anil</a>
+                      </p>
+
+                      <p class="author-title" style="font-size: 15px;">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-2.jpg" alt="Modern Apartments" class="w-100">
+                  </a>
+
+                  <div class="card-badge orange" style="font-size: 15px;">For Sales</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address style="font-size: 15px;">Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span style="font-size: 15px;">4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span style="font-size: 15px;">2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong style="font-size: 15px;">$34,900</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#" style="font-size: 15px;">Modern Apartments</a>
+                  </h3>
+
+                  <p class="card-text" style="font-size: 15px;">
+                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#" style="font-size: 15px;">Sunny</a>
+                      </p>
+
+                      <p class="author-title" style="font-size: 15px;">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-3.jpg" alt="Comfortable Apartment" class="w-100">
+                  </a>
+
+                  <div class="card-badge green" style="font-size: 15px;">For Rent</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address style="font-size: 15px;">Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span style="font-size: 15px;">4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span style="font-size: 15px;">2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong style="font-size: 15px;">$34,900</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#" style="font-size: 15px;">Comfortable Apartment</a>
+                  </h3>
+
+                  <p class="card-text" style="font-size: 15px;">
+                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#" style="font-size: 15px;">sunil</a>
+                      </p>
+
+                      <p class="author-title" style="font-size: 15px;">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions">
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/property-4.png" alt="Luxury villa in Rego Park" class="w-100">
+                  </a>
+
+                  <div class="card-badge green" style="font-size: 15px;">For Rent</div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address style="font-size: 15px;">Belmont Gardens, Chicago</address>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="camera"></ion-icon>
+
+                      <span style="font-size: 15px;">4</span>
+                    </button>
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="film"></ion-icon>
+
+                      <span style="font-size: 15px;">2</span>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong style="font-size: 15px;">$34,900</strong>/Month
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#" style="font-size: 15px;">Luxury villa in Rego Park</a>
+                  </h3>
+
+                  <p class="card-text"  style="font-size: 15px;">
+                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
+                  </p>
+
+                  <ul class="card-list">
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">3</strong>
+
+                      <ion-icon name="bed-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Bedrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">2</strong>
+
+                      <ion-icon name="man-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Bathrooms</span>
+                    </li>
+
+                    <li class="card-item">
+                      <strong style="font-size: 15px;">3450</strong>
+
+                      <ion-icon name="square-outline"></ion-icon>
+
+                      <span style="font-size: 15px;">Square Ft</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-footer">
+
+                  <div class="card-author">
+
+                    <figure class="author-avatar">
+                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
+                    </figure>
+
+                    <div>
+                      <p class="author-name">
+                        <a href="#" style="font-size: 15px;">saket</a>
+                      </p>
+
+                      <p class="author-title">Estate Agents</p>
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer-actions"> 
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="resize-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="card-footer-actions-btn">
+                      <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+<!-- Testimonials Section -->
+<div id="testimonials">
+  <div class="container">
+    <div class="section-title">
+      <h2>Testimonials</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="testimonial">
+          <div class="testimonial-image"> <img src="img/testimonials/01.jpg" alt=""> </div>
+          <div class="testimonial-content">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+            <div class="testimonial-meta"> - John Doe </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <div class="testimonial-image"> <img src="img/testimonials/02.jpg" alt=""> </div>
+          <div class="testimonial-content">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis."</p>
+            <div class="testimonial-meta"> - Johnathan Doe </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <div class="testimonial-image"> <img src="img/testimonials/03.jpg" alt=""> </div>
+          <div class="testimonial-content">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+            <div class="testimonial-meta"> - John Doe </div>
+          </div>
+        </div>
+      </div>
+      <div class="row"> </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <div class="testimonial-image"> <img src="img/testimonials/04.jpg" alt=""> </div>
+          <div class="testimonial-content">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+            <div class="testimonial-meta"> - Johnathan Doe </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <div class="testimonial-image"> <img src="img/testimonials/05.jpg" alt=""> </div>
+          <div class="testimonial-content">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+            <div class="testimonial-meta"> - John Doe </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <div class="testimonial-image"> <img src="img/testimonials/06.jpg" alt=""> </div>
+          <div class="testimonial-content">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis."</p>
+            <div class="testimonial-meta"> - Johnathan Doe </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div id="contact">
+  <div class="container">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+          <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
+        </div>
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-custom btn-lg" style="margin-left: 300px;">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-3 col-md-offset-1 contact-info">
+      <div class="contact-item">
+        <h4>Contact Info</h4>
+        <p><span>Address</span>
+         gorakhpur, uttarpradesh</p>
+      </div>
+      <div class="contact-item">
+        <p><span>Phone</span> +91 9305481436</p>
+      </div>
+      <div class="contact-item">
+        <p><span>Email</span> shivampandey2426@gamil.com</p>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="row">
+        <div class="social">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li><br><br><br>
+<p> Design by Shivam pandey</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn" style="color: peru">Send</button>
+    <button type="button" class="btn cancel"  onclick="closeForm()" style="color: peru">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+ 
+
+
+
+
+</body>
+</html>
